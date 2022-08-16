@@ -40,5 +40,6 @@ public class BMI {
         }
 
         System.out.println("BMI: " + getBMI);
+        
     }
 }
