@@ -15,12 +15,11 @@ public class SavingCalculator {
         int savingsPeriod = scanner.nextInt();
 
         System.out.println("연이자율을 입력해주세요(%): ");
-        double interestRatePerYear = scanner.nextDouble();
-
+        double ratePerYear = scanner.nextDouble();
 
         int savingsPeriodToMonth = savingsPeriod * 12;
         int totalDeposit = savingsPerMonth * savingsPeriodToMonth;
-        double interestRate = interestRatePerYear / 100 / 12;
+        double interestRate = ratePerYear / 100 / 12;
 
         double getPow = Math.pow((1 + interestRate), savingsPeriodToMonth);
 
@@ -28,10 +27,10 @@ public class SavingCalculator {
         double interestRateBeforeTax = (int)(totalSavings - totalDeposit);
         double interestRateAfterTax = Math.ceil(interestRateBeforeTax - interestRateBeforeTax * 0.154);
 
-        double finalMoney = totalDeposit + (int)(interestRateAfterTax);
+        double finalAmount = totalDeposit + (int)(interestRateAfterTax);
 
         System.out.println("원급합계: " + decFormat.format(totalDeposit) + "원");
         System.out.println("세후이자액: " + decFormat.format((int)(interestRateAfterTax)) + "원");
-        System.out.println("세후 총 수령액: " + decFormat.format((int)(finalMoney)) + "원");
+        System.out.println("세후 총 수령액: " + decFormat.format((int)(finalAmount)) + "원");
     }
 }
