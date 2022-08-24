@@ -4,11 +4,11 @@ class Solution {
         String ODD = "Odd";
         String EVEN = "Even";
 
-        if (num % 2 == 0) {
+        if (num % 2 == 0 || num == 0) {
             answer = EVEN;
         }
 
-        if (num % 2 == 1) {
+        if (num % 2 == 1 || num % 2 == -1) {
             answer = ODD;
         }
 
