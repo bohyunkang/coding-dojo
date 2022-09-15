@@ -2,3 +2,6 @@
 .idea
 *.iml
 classes/
+
+## compiled production & test
+out/
