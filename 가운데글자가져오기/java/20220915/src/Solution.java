@@ -2,12 +2,12 @@ public class Solution {
     public String solution(String s) {
         String answer = "";
 
-        answer = checkMiddleString(s);
+        answer = getMiddleString(s);
 
         return answer;
     }
 
-    public String checkMiddleString(String s) {
+    public String getMiddleString(String s) {
         int middle = s.length() / 2;
 
         if (isOdd(s)) {

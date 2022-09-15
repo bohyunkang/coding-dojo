@@ -8,20 +8,14 @@ class SolutionTest {
         Solution solution = new Solution();
 
         assertTrue(solution.isOdd("abcde"));
-    }
-
-    @Test
-    void isEven() {
-        Solution solution = new Solution();
-
         assertFalse(solution.isOdd("qwer"));
     }
 
     @Test
-    void str() {
+    void middleString() {
         Solution solution = new Solution();
 
-        assertEquals("c", solution.checkMiddleString("abcde"));
-        assertEquals("we", solution.checkMiddleString("qwer"));
+        assertEquals("c", solution.getMiddleString("abcde"));
+        assertEquals("we", solution.getMiddleString("qwer"));
     }
 }
