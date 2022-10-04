@@ -9,10 +9,10 @@ public class Solution {
         ArrayList<Integer> answers = new ArrayList<Integer>();
 
         int value = -1;
-        for (int i = 0; i < arr.length; i += 1) {
-            if (arr[i] != value) {
-                answers.add(arr[i]);
-                value = arr[i];
+        for (int i : arr) {
+            if (i != value) {
+                answers.add(i);
+                value = i;
             }
         }
 
