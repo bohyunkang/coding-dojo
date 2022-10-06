@@ -10,4 +10,12 @@ class SolutionTest {
 
         assertEquals(3, solution.computeRemainder(10));
     }
+
+    @Test
+    void stream() {
+        Solution solution = new Solution();
+
+        assertEquals(3, solution.computeRemainder(10));
+        assertEquals(11, solution.computeRemainder(12));
+    }
 }
