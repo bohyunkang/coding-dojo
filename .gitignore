@@ -5,3 +5,6 @@ classes/
 
 ## compiled production & test
 out/
+
+## javascript packages
+node_modules/
