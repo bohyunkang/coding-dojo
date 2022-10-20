@@ -1,7 +1,6 @@
 public class Solution {
     public String solution(String s) {
-        String answer = "";
-        return answer;
+        return zigzagCase(s);
     }
 
     public boolean isOdd(int index) {
