@@ -6,7 +6,7 @@ export default function solution(participant, completion) {
   const sortedParticipant = getSortedArray(participant);
   const sortedCompletion = getSortedArray(completion);
 
-  return sortedParticipant.filter((player, i) => player !== sortedCompletion[i]).join('');
+  return sortedParticipant.filter((player, i) => player !== sortedCompletion[i])[0];
 }
 
 export function useForLoop(participant, completion) {

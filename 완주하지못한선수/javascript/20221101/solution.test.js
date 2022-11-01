@@ -18,6 +18,11 @@ test('완주하지 못한 선수를 돌려주자.', () => {
   const completion2 = ['josipa', 'filipa', 'marina', 'nikola'];
 
   expect(solution(participant2, completion2)).toBe('vinko');
+
+  const participant3 = ['mislav', 'stanko', 'mislav', 'ana'];
+  const completion3 = ['stanko', 'ana', 'mislav'];
+
+  expect(solution(participant3, completion3)).toBe('mislav');
 });
 
 test('for-loop 사용해보기', () => {
