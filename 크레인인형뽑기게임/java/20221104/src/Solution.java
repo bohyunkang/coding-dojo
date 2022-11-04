@@ -9,6 +9,8 @@ class Solution {
         for (int move : moves) {
             int j = move - 1;
 
+            System.out.println("move >>>>" + move + " && j >>>>" + j);
+
             for (int i = 0; i < board.length; i++) {
                 if (board[i][j] > 0) {
                     if (stack.isEmpty()) {
