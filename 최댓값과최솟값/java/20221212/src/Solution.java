@@ -8,7 +8,7 @@ public class Solution {
         String min = Integer.toString(sortedArray[0]);
         String max = Integer.toString(sortedArray[sortedArray.length - 1]);
 
-        return "" + min + " " + max + "";
+        return min + " " + max;
     }
 
     public int[] splitString(String s) {
