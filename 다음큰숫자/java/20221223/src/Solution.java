@@ -13,11 +13,7 @@ public class Solution {
         return countOfOne(n) == countOfOne(target);
     }
 
-    public long countOfOne(int number) {
-        String binaryString = Integer.toBinaryString(number);
-
-        return binaryString.chars()
-                .filter(c -> c == '1')
-                .count();
+    public int countOfOne(int number) {
+        return Integer.bitCount(number);
     }
 }
