@@ -3,13 +3,13 @@ import java.util.Queue;
 
 public class Solution {
     public int solution(int cacheSize, String[] cities) {
-        int runTime = 0;
+        int runtime = 0;
         String[] citiesToLowerCase = toLowerCase(cities);
         Queue<String> queue = new LinkedList<>();
 
         for (String city : citiesToLowerCase) {
             if (cacheSize == 0) {
-                runTime += 5;
+                runtime += 5;
                 continue;
             }
 
@@ -18,18 +18,18 @@ public class Solution {
             }
 
             if (queue.contains(city)) {
-                runTime += 1;
+                runtime += 1;
                 queue.remove(city);
                 queue.add(city);
             }
 
             if (!queue.contains(city)) {
-                runTime += 5;
+                runtime += 5;
                 queue.add(city);
             }
         }
 
-        return runTime;
+        return runtime;
     }
 
     public String[] toLowerCase(String[] cities) {
