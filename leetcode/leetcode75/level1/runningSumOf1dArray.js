@@ -13,3 +13,10 @@ const runningSum2 = function(nums) {
 
   return nums.map(num => num += total);
 };
+
+// 세 번째 풀이
+const runningSum3 = function(nums) {
+  nums.reduce((acc, num, i, array) => array[i] = acc + num);
+
+  return nums;
+}
