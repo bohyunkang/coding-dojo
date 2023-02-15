@@ -1,4 +1,4 @@
-function isEqual(string) {
+function indexesOfString(string) {
   const dictionary = [];
 
   const characters = string.split("");
@@ -15,5 +15,5 @@ function isEqual(string) {
 }
 
 const isIsomorphic = function(s, t) {
-  return isEqual(s) === isEqual(t);
+  return indexesOfString(s) === indexesOfString(t);
 };
