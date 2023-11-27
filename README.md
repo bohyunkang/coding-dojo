@@ -24,14 +24,17 @@
  ┃ ┣ 📂ISSUE_TEMPLATE
  ┃ ┃ ┗ 📜💡-how-to-solve-it-.md
  ┃ ┗ 📜pull_request_template.md
- ┣ 📂megaptera 👉 메가테라 문제(문제 별로 하위 폴더 나눔)
- ┣ 📂programmers 👉 프로그래머스 문제(레벨 별로 하위 폴더 나눔)
- ┃ ┣ 📂level1
- ┃ ┣ 📂level2
- ┃ ┗ 📂level3
+ ┣ 📂inflearn 👉 인프런 문제(섹션 별로 하위 폴더 나눔)
+ ┃ ┗ 📂section01
  ┣ 📂leetcode 👉 리트코드 문제(챌린지 별로 하위 폴더 나눔)
  ┃ ┣ 📂leetcode75 👉 챌린지 폴더(레벨 별로 하위 폴더 나눔)
  ┃ ┃ ┗ 📂level1
+ ┣ 📂megaptera 👉 메가테라 문제(문제 별로 하위 폴더 나눔)
+ ┣ 📂programmers 👉 프로그래머스 문제(레벨 별로 하위 폴더 나눔)
+ ┃ ┣ 📂level0
+ ┃ ┣ 📂level1
+ ┃ ┣ 📂level2
+ ┃ ┗ 📂level3
  ┣ 📜.gitignore
  ┗ 📜README.md
 ```
