@@ -1,19 +1,17 @@
-function solution(string) {
-  const numbers = string.split(' ').map(Number);
+function solution(a, b, c) {
+  const numbers = arguments;
 
   let answer = numbers[0];
 
-  numbers.forEach((number) => {
-    if (number <= answer) {
-      answer = number;
+  for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] <= answer) {
+      answer = numbers[i];
     }
-  });
-
-  console.log(answer); // test
+  }
 
   return answer;
 }
 
 // test
-solution('6 5 11');
-solution('12 8 2');
+console.log(solution(6, 5, 11));
+console.log(solution(12, 8, 2));
