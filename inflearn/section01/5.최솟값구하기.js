@@ -3,7 +3,7 @@ function solution1(arr) {
   let answer = arr[0];
 
   for (let i = 0; i < arr.length; i += 1) {
-    if (answer >= arr[i]) {
+    if (arr[i] <= answer) {
       answer = arr[i];
     }
   }
@@ -16,7 +16,7 @@ console.log(solution1([5, 3, 7, 11, 2, 15, 17]), '기대하는 값: 2');
 // 2. reduce 사용
 function solution2(arr) {
   return arr.reduce((prev, curr) => {
-    return prev >= curr ? curr : prev;
+    return curr <= prev ? curr : prev;
   });
 }
 
