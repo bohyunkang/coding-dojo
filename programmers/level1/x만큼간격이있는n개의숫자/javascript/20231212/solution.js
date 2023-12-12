@@ -36,3 +36,8 @@ function solution(x, n) {
 
   return answer;
 }
+
+// 풀이 3: keys() 메서드 활용
+function solution(x, n) {
+  return [...Array(n).keys()].map((_, i) => (i + 1) * x);
+}
