@@ -5,7 +5,8 @@ function solution(t, p) {
     array.push(t.slice(i, i + p.length));
   }
 
-  return array.filter((item) => Number(item) <= p).length;
+  const answer = array.filter((item) => Number(item) <= p);
+  return answer.length;
 }
 
 console.log(solution('3141592', '271'), '정답: 2');
