@@ -55,8 +55,6 @@ function solution(k, score) {
   return answer;
 }
 
-// 풀이 2
-
 console.log(
   solution(3, [10, 100, 20, 150, 1, 100, 200]),
   '정답: [10, 10, 10, 20, 20, 100, 100]',
