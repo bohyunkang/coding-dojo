@@ -32,8 +32,6 @@ function getDivisors(num) {
   return [...array, num].length;
 }
 
-console.log(getDivisors(15));
-
 console.log(solution(5, 3, 2), '정답: 10');
 console.log(solution(10, 3, 2), '정답: 21');
 console.log(solution(40, 2, 1), '정답: 52');

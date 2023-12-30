@@ -79,5 +79,5 @@ function solution(n) {
   return answer;
 }
 
-// console.log(solution(10), '정답: 4');
+console.log(solution(10), '정답: 4');
 console.log(solution(5), '정답: 3');
