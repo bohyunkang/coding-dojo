@@ -35,7 +35,7 @@ function solution(s, skip, index) {
   return answer;
 }
 
-// 다른 풀이
+// 다른 풀이 1
 // 1. filter 함수를 사용하여 skip문자를 제거 배열을 반환 받는다.
 // 2. map 함수를 사용하여 (현재 알파벳) + index에 위치한 값을 반환한다.
 function solution(s, skip, index) {
@@ -48,4 +48,22 @@ function solution(s, skip, index) {
     .join('');
 }
 
-console.log(solution('aukks', 'wbqd', 5), '정답: happy');
+// 다른 풀이 2
+// 1. 정규표현식을 사용하여 skip을 제외한 문자열을 matched에 할당한다.
+// 2. s를 순회하며 해당 인덱스에 + index만큼 더한 값을 matched에서 찾아 answer에 누적한다.
+// 2-1. 이때 matched의 길이보다 newIdx가 큰 경우를 방지하기 위해 matched.length로 나눈 나머지값을 구한다.
+function solution2(s, skip, index) {
+  let answer = '';
+
+  const matched = 'abcdefghijklmnopqrstuvwxyz'.match(
+    new RegExp(`[^${skip}]`, 'g'),
+  );
+  
+  for (const char of s) {
+    const newIdx = matched.indexOf(char) + index;
+    answer += matched[newIdx % matched.length];
+  }
+  return answer;
+};
+
+console.log(solution2('aukks', 'wbqd', 5), '정답: happy');
