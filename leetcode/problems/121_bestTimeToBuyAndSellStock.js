@@ -34,10 +34,6 @@ var maxProfit = function (prices) {
 };
 
 // 풀이 2: 풀이 1 리팩토링 -> temp 변수, if 문 제거 및 Math.max 사용
-/**
- * @param {number[]} prices
- * @return {number}
- */
 var maxProfit = function (prices) {
   let maxProfit = 0;
   let minPrice = prices[0];

@@ -30,10 +30,6 @@ var maxArea = function (height) {
 };
 
 /**
- * @param {number[]} height
- * @return {number}
- */
-/**
   풀이 2: 반복문 한번만 사용하는 것으로 개선. 투 포인터 방식
 
   1. 배열을 양 끝을 각 포인터로 삼는다.
