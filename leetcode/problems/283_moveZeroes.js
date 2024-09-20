@@ -17,4 +17,15 @@ var moveZeroes = function (nums) {
   }
 };
 
-// 풀이 2: 풀이 1 개선 방법
+// 풀이 2: 풀이 1 개선 방법 -> temp 변수 제거
+var moveZeroes = function (nums) {
+  let nonZeroIndex = 0;
+
+  for (let i = 0; i < nums.length; i += 1) {
+    if (nums[i] !== 0) {
+      [nums[nonZeroIndex], nums[i]] = [nums[i], nums[nonZeroIndex]];
+
+      nonZeroIndex += 1;
+    }
+  }
+};
