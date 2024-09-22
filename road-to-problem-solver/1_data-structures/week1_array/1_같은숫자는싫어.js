@@ -1,3 +1,5 @@
+// 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/12906
+
 /**
  * 풀이 1: for 사용
  *
