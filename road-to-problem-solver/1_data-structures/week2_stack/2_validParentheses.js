@@ -163,3 +163,5 @@ var isValid = function (s) {
 
   return brackets.length === 0 ? true : false;
 };
+
+// TODO: 객체의 key-value를 활용해서도 작성해보기.
