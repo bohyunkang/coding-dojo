@@ -29,3 +29,5 @@ function solution(prices) {
 
   return result;
 }
+
+// TODO: 스택을 활용해서 다시 풀어보자.(스택을 활용하는 문제인데, 정작 스택을 활용 안함;;)
