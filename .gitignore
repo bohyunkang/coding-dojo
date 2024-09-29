@@ -8,3 +8,6 @@ out/
 
 ## javascript packages
 node_modules/
+
+## Mac OS
+.DS_Store
