@@ -61,5 +61,5 @@ function solution(s) {
     }
   }
 
-  return brackets.length;
+  return brackets.length === 0;
 }
