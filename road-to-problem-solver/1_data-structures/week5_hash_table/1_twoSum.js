@@ -26,10 +26,12 @@ var twoSum = function (nums, target) {
  * for문을 한번 순회 & 객체 활용
  */
 var twoSum = function (nums, target) {
-  const numObj = {}; // 숫자와 인덱스를 저장할 객체
+  // 숫자와 인덱스를 저장할 객체
+  const numObj = {};
 
   for (let i = 0; i < nums.length; i += 1) {
-    const needed = target - nums[i]; // 현재 숫자와 더해서 target이 되는 값
+    // 현재 숫자와 더해서 target이 되는 값
+    const needed = target - nums[i];
 
     // 필요한 값이 객체에 있다면 정답 반환
     if (needed in numObj) {
@@ -46,10 +48,12 @@ var twoSum = function (nums, target) {
  * for문을 한번 순회 & Map 사용
  */
 var twoSum = function (nums, target) {
-  const numMap = new Map(); // 숫자와 인덱스를 저장할 Map
+  // 숫자와 인덱스를 저장할 Map
+  const numMap = new Map();
 
   for (let i = 0; i < nums.length; i += 1) {
-    const needed = target - nums[i]; // 현재 숫자와 더해서 target이 되는 값
+    // 현재 숫자와 더해서 target이 되는 값
+    const needed = target - nums[i];
 
     // 필요한 값이 Map에 있다면 정답 반환
     if (numMap.has(needed)) {
