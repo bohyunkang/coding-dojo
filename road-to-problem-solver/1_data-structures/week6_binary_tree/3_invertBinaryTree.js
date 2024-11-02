@@ -20,16 +20,22 @@
     - 교환된 자식 노드들에 대해 재귀적으로 같은 작업 수행
  */
 var invertTree = function (root) {
+  // root가 null이면 null 반환
   if (root === null) {
     return null;
   }
 
+  // 현재 노드의 왼쪽 자식을 임시 변수에 저장
   let left = root.left;
+  // 왼쪽 자식을 오른쪽 자식으로 저장
   root.left = root.right;
+  // 오른쪽 자식을 임시 변수에 저장해놓은 왼쪽 자식으로 저장
   root.right = left;
 
+  // 재귀적으로 같은 작업을 수행
   invertTree(root.left);
   invertTree(root.right);
 
+  // 그렇게 교환된 트리를 반환
   return root;
 };
