@@ -28,10 +28,10 @@ var maxDepth = function (root) {
   }
 
   // 왼쪽 서브트리의 최대 깊이를 재귀적으로 계산
-  let leftDepth = maxDepth(root.left);
+  const leftDepth = maxDepth(root.left);
 
   // 오른쪽 서브트리의 최대 깊이를 재귀적으로 계산
-  let rightDepth = maxDepth(root.right);
+  const rightDepth = maxDepth(root.right);
 
   // 현재 노드의 깊이는 왼쪽과 오른쪽 중 더 큰 값 + 1(현재 노드)
   return Math.max(leftDepth, rightDepth) + 1;
